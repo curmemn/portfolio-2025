@@ -1,0 +1,1407 @@
+body{
+  overflow-y: hidden;
+  background-color: var(--black);
+}
+
+section{
+  height: 100dvh;
+  font-size: 30px;
+}
+
+#section01{
+  z-index: 5;
+}
+
+#section02{
+  z-index: 4;
+}
+#section03{
+  z-index: 3;
+}
+#section04{
+  z-index: 2;
+}
+#section05{
+  z-index: 1;
+}
+
+/* ##################### roading page ##################### */
+#loading-page{
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  font-size: 30px;
+  transition: 0.3s;
+  gap: 100px;
+}
+
+.loading-wrap{
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 300px;
+}
+
+.loading-image{
+  width: 80px;
+  height: 80px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.loading-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+  transform: scale(0.6);
+}
+
+.loading-bar{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0%;
+  height: 6px;
+  background-color: var(--white);
+  transition: 1s ease-in-out;
+  border-radius: 20px;
+}
+
+.loading-text{
+  display: block;
+  color: var(--white);
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.loading-text i{
+  display: block;
+  font-style: normal;
+  color: var(--white);
+  font-size: 12px;
+}
+
+#loading-page .loading-background{
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* common */
+
+.red{
+  background-color: var(--red);
+}
+
+.yellow{
+  background-color: var(--yellow);
+}
+
+.green{
+  background-color: var(--green);
+}
+
+.blue{
+  background-color: var(--blue);
+}
+
+.purple{
+  background-color: var(--purple);
+}
+
+.gray{
+  background-color: var(--gray4);
+}
+
+#background{
+  width: 100%;
+  height: 100dvh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url(../images/background.svg) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  transition: 1.4s;
+}
+
+/* circle custom*/
+
+.big-circle{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--black);
+}
+
+.small-circle{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--black);
+}
+
+.distance1, .distance2, .distance3, .distance4, .distance5{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.distance1 div, .distance2 div, .distance3 div, .distance4 div, .distance5 div{
+  position: absolute;
+}
+
+.distance1{
+  z-index: 5;
+  transition: 5s;
+  pointer-events: none;
+}
+.distance2{
+  z-index: 4;
+  transition: 4s;
+  pointer-events: none;
+}
+.distance3{
+  z-index: 3;
+  transition: 3s;
+}
+.distance4{
+  z-index: 2;
+  transition: 2s;
+  filter: blur(2px);
+}
+.distance5{
+  z-index: 1;
+  transition: 1s;
+  filter: blur(2px);
+}
+
+/* ##################### section 01 ##################### */
+#section01{
+  position: fixed;
+  z-index: 999;
+  transition: 0.8s ease;
+}
+
+
+.section01-object{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.section01-object .distance1{
+  pointer-events: none;
+}
+
+.section01-object .distance1 div:nth-child(1) {
+  top: 6%;
+  right: 37%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section01-object .distance1 div:nth-child(2) {
+  top: 8%;
+  left: 41%;
+  animation: move-10px 2s ease-in-out infinite;
+}
+
+.section01-object .distance1 div:nth-child(3) {
+  bottom: 15%;
+  left: 29%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section01-object .distance1 div:nth-child(4) {
+  bottom: 22%;
+  left: 22%;
+  z-index: 100;
+  animation: move-10px 2s ease-in-out infinite;
+}
+
+
+.section01-object .distance2 div:nth-child(1) {
+  top: 41%;
+  left: 17%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section01-object .distance2 div:nth-child(2) {
+  bottom: 13%;
+  right: 23%;
+  animation: move-10px 2s ease-in-out infinite;
+}
+
+.section01-object .distance2 div:nth-child(3) {
+  top: 16%;
+  left: 22%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section01-object .distance2 div:nth-child(4) {
+  top: 15%;
+  right: 45%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section01-object .distance2 div:nth-child(5) {
+  top: 18%;
+  right: 11%;
+  animation: move-10px 2s ease-in-out infinite;
+}
+
+.section01-object .distance2{
+  pointer-events: none;
+}
+
+.section01-object .distance3 .logo{
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 500px;
+  animation: logo-move 2.5s ease-in-out infinite;
+  background: url(../images/logo.svg) no-repeat center;
+  background-size: contain;
+}
+
+
+.section01-object .distance3 .lets-scroll{
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  bottom: -60px;
+  left: 50%;
+  padding: 35px 45px;
+  font-family: var(--font-changwon);
+  font-size: 45px;
+  color: #FFDE70;
+  background: #FF5B5B;
+  border: 2px solid var(--black);
+  box-shadow: 4px 6px 0px var(--black);
+  transform: translateX(-50%) rotate(3deg);
+}
+
+.section01-object .distance3 .logo:hover .lets-scroll{
+  animation: lets-scroll 0.7s ease-in-out infinite;
+}
+
+.section01-object .distance4 div:nth-child(1){
+  top: 27%;
+  left: 30%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+.section01-object .distance4 div:nth-child(2){
+  top: 42%;
+  right: 13%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+.section01-object .distance4 div:nth-child(3){
+  top: 37%;
+  left: 9%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+.section01-object .distance4 div:nth-child(4){
+  bottom: 11%;
+  right: 38%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+.section01-object .distance4 div:nth-child(5){
+  top: 21%;
+  right: 18%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+.section01-object .distance4 div:nth-child(6){
+  top: 12%;
+  right: 31%;
+  animation: rotate-to-right 3s ease-in-out infinite;
+}
+.section01-object .distance4 div:nth-child(7){
+  bottom: 28%;
+  right: 18%;
+  animation: rotate-to-left 2s ease-in-out infinite;
+}
+
+.section01-object .distance5 div:nth-child(1){
+  top: 21%;
+  left: 38%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+
+.section01-object .distance5 div:nth-child(2){
+  bottom: 26%;
+  right: 29%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section01-object .distance5 div:nth-child(3){
+  top: 12%;
+  right: 22%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+
+/* ##################### section 02 ##################### */
+
+
+#section02{
+  position: fixed;
+  z-index: 998;
+  transition: 0.8s ease;
+  transform: scale(0.4);
+  filter: blur(3px) grayscale(30%);
+}
+
+.section02-object .distance1 div:nth-child(1){
+  top: 12%;
+  left: 7%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section02-object .distance1 div:nth-child(2){
+  bottom: 8%;
+  right: 6%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+
+.section02-object .distance1 div:nth-child(3){
+  top: 16%;
+  right: 49%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section02-object .distance1 div:nth-child(4){
+  bottom: 15%;
+  left: 40%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section02-object .distance1 div:nth-child(5){
+  bottom: 20%;
+  left: 10%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+
+.section02-object .distance1 div:nth-child(6){
+  top: 7%;
+  right: 11%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section02-object .distance2 div:nth-child(1){
+  bottom: 40%;
+  left: 6%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section02-object .distance2 div:nth-child(2){
+  bottom: 24%;
+  right: 4%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+
+.section02-object .distance2 div:nth-child(3){
+  top: 5%;
+  right: 22%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section02-object .distance2 div:nth-child(4){
+  top: 50%;
+  right: 6%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.object-idcard{
+  width: 900px;
+  height: 900px;
+  top: -11%;
+  left: 0%;
+  transform: rotate(5deg);
+  animation: rotate-idcard 8s ease-in-out infinite;
+}
+
+.object-pen{
+  bottom: 2%;
+  right: 1%;
+  animation: move-pen 8s ease-in-out infinite;
+}
+
+.paper-wrap{
+  width: 1000px;
+  height: 1200px;
+  top: 9%;
+  right: 0;
+  animation: rotate-paper 10s ease-in-out infinite;
+}
+
+.paper-item{
+  width: 800px;
+  height: 1100px;
+  padding: 80px 50px;
+  border: 2px solid var(--black);
+  background: linear-gradient(145deg, var(--white), var(--gray2));
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: z-index 2s;
+}
+
+.paper-item.active{
+  animation: move-paper-active 1s ease-in-out ;
+  z-index: 4;
+}
+
+.paper-wrap .paper-item h1{
+  font-family: 'ChangwonDangamAsac Bold';
+  color: var(--red);
+  font-size: 64px;
+}
+
+.paper-wrap .paper-item span{
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.paper-wrap .paper-item span b{
+  font-weight: 800;
+  font-size: 32px;
+  color: var(--purple);
+}
+
+.paper-wrap .paper-item p{
+  line-height: 2rem;
+  font-size: 20px;
+  font-weight: 400;
+  width: 640px;
+  word-break: keep-all;
+}
+
+.paper-wrap .paper-item p b{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.paper-wrap .paper-item:nth-child(3) p{
+  line-height: 3rem;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.paper-wrap .paper-item:nth-child(3) p b{
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.paper-wrap .paper-item:nth-child(3) p i{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  display: block;
+  transform: translateY(-8px);
+}
+
+.paper-wrap .paper-item:nth-child(4) h1{
+  margin-bottom: 20px;
+}
+
+.paper-wrap .paper-item:nth-child(4) p{
+  font-size: 28px;
+  line-height: 3rem;
+}
+
+.paper-wrap .paper-item:nth-child(4) p b{
+  font-size: 28px;
+}
+
+.paper-index{
+  min-width: 100px;
+  padding: 10px 70px 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 2px solid var(--black);
+}
+
+.paper-index:hover{
+  transform: translateX(5px);
+}
+
+.paper-wrap div:nth-child(2) .paper-index{
+  top: 2%;
+  right: -7%;
+  background-color: var(--red);
+}
+
+.paper-wrap div:nth-child(3) .paper-index{
+  top: 8%;
+  right: -7%;
+  background-color: var(--yellow);
+}
+
+.paper-wrap div:nth-child(4) .paper-index{
+  top: 14%;
+  right: -7%;
+  background-color: var(--green);
+}
+
+.paper-wrap > div:nth-child(1){
+  width: 150px;
+  height: 150px;
+  z-index: 5;
+  position: absolute;
+  top: -10%;
+  left: 14%;
+  transform: rotate(12deg);
+}
+
+.paper-wrap div:nth-child(2){
+  z-index: 3;
+  transform: rotate(8deg);
+  
+}
+.paper-wrap div:nth-child(3){
+  z-index: 2;
+  transform: rotate(9deg);
+}
+.paper-wrap div:nth-child(4){
+  z-index: 1;
+  transform: rotate(10deg);
+}
+
+.object-helmet{
+  bottom: 25%;
+  left: 34%;
+  animation: rotate-to-left 8s ease-in-out infinite;
+}
+
+.object-helmet img{
+  transform: rotate(-15deg);
+  width: 90%;
+}
+
+.section02-object .distance5 div:nth-child(1){
+  top: 25%;
+  left: 34%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+
+.section02-object .distance5 div:nth-child(2){
+  top: 12%;
+  left: 28%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section02-object .distance5 div:nth-child(3){
+  bottom: 8%;
+  left: 30%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section02-object .distance5 div:nth-child(4){
+  bottom: 6%;
+  left: 9%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+
+
+/* ##################### section 03 ##################### */
+
+#section03{
+  position: fixed;
+  z-index: 997;
+  transition: 0.8s ease;
+  transform: scale(0.2);
+  filter: blur(6px) grayscale(60%);
+}
+
+.section03-object .distance1 div:nth-child(1){
+  bottom: 7%;
+  left: 40%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+.section03-object .distance1 div:nth-child(2){
+  bottom: 30%;
+  right: 30%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section03-object .distance1 div:nth-child(3){
+  bottom: 14%;
+  left: 6%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section03-object .distance2 div:nth-child(1){
+  top: 34%;
+  right: 10%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+.section03-object .distance2 div:nth-child(2){
+  right: 20%;
+  bottom: 10%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section03-object .distance2 div:nth-child(3){
+  top: 10%;
+  right: 5%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+
+.section03-object .distance2 div:nth-child(4){
+  left: 3%;
+  top: 20%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section03-object .distance2 div:nth-child(5){
+  top: 5%;
+  left: 23%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section03-object .distance2 div:nth-child(6){
+  top: 31%;
+  right: 23%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section03-object .distance2 div:nth-child(7){
+  bottom: 5%;
+  right: 30%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+
+.section03-object .distance5 div:nth-child(1){
+  top: 15%;
+  right: 34%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section03-object .distance5 div:nth-child(2){
+  bottom: 20%;
+  right: 7%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section03-object .distance5 div:nth-child(3){
+  top: 5%;
+  right: 17%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section03-object .distance3{
+  transform: scale(1) translate(-45%, -30%) rotate(-10deg);
+  transition: 1.5s;
+}
+
+.skill-wrap{
+  width: 100%;
+  height: 100%;
+}
+
+.skill-wrap .object-pad{
+  position: relative;
+  top: 5%;
+  left: 0;
+  object-fit: cover;
+  width: 1200px;
+  animation: move-pad 5s infinite;
+}
+
+.object-pad > img{
+  width: 100%;
+  height: 100%;
+}
+
+.pad-wrap{
+  top: 56px;
+  left: 107px;
+  width: 983px;
+  height: 715px;
+}
+
+.icon-wrap{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  height: 100%;
+  padding: 80px;
+  gap: 60px;
+}
+
+.icon-wrap .pad-icon{
+  position: static;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pad-icon img{
+  object-fit: cover;
+  width: 100%;
+  border-radius: 14px;
+  transition: 0.3s ease;
+}
+
+.pad-icon span{
+  color: var(--white);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.pad-icon:hover img{
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.skill-popup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 99%;
+  height: 99%;
+  backdrop-filter: blur(10px);
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in-out;
+}
+
+.skill-popup.active{
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-wrap{
+  width: 400px;
+  height: 400px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-popup .popup-wrap > div {
+  position: static;
+  text-align: center;
+}
+
+.popup-wrap .popup-icon{
+  width: 120px;
+}
+
+.popup-wrap .popup-icon img{
+  width: 100%;
+}
+
+.popup-wrap .popup-icon span{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.skill-rate{
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  background-color: var(--gray2);
+  border: 1px solid var(--gray4);
+  overflow: hidden;
+}
+
+.skill-rate .skill-rate-percent{
+  position: relative;
+  font-weight: 300;
+  line-height: 30px;
+  left: 0;
+  height: 100%;
+  background-color: var(--clearblue);
+  color: var(--white);
+  width: 0;
+  transition: 0.7s ease;
+  border-radius: 0 30px 30px 0;
+  overflow: hidden;
+}
+
+.skill-desc p{
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.popup-close{
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 18px;
+  color: var(--clearblue);
+}
+
+.popup-close .bi{
+  font-size: 24px;
+}
+
+.section03-object .object-applepencil{
+  bottom: 0%;
+  right: 26%;
+  animation: move-pen 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.section03-object .object-teddybear{
+  bottom: 15%;
+  right: 8%;
+  animation: move-teddy 10s ease-in-out infinite;
+}
+
+/* ##################### section 04 ##################### */
+
+#section04{
+  position: fixed;
+  z-index: 996;
+  transition: 0.8s ease;
+  transform: scale(0);
+}
+
+.section04-object .distance1 div:nth-child(1){
+  bottom: 14%;
+  left: 7%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+
+.section04-object .distance1 div:nth-child(2){
+  top: 22%;
+  right: 9%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section04-object .distance1 div:nth-child(3){
+  top: 43%;
+  left: 15%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section04-object .distance2 div:nth-child(1){
+  top: 5%;
+  left: 5%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section04-object .distance2 div:nth-child(2){
+  bottom: 17%;
+  right: 5%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+
+.section04-object .distance2 div:nth-child(3){
+  bottom: 30%;
+  right: 13%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section04-object .distance2 div:nth-child(4){
+  top: 5%;
+  right: 31%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+.section04-object .distance3{
+  transform: translate(60%, -50%) rotate(20deg);
+  transition: 1.5s;
+}
+
+.macbook-wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: move-10px 8s ease-in-out infinite;
+}
+
+.macbook-wrap .object-macbook{
+  position: absolute;
+  left: 84.5px;
+  top: 45px;
+}
+
+.macbook-wrap .work-slide{
+  position: absolute;
+  width: 1174px;
+  height: 691px;
+  top: 106px;
+  left: 374px;
+  background-color: var(--gray1);
+  transition: opacity 1s ease;
+}
+
+.work-slide .swiper-slide{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: var(--gray1);
+}
+
+.swiper-pagination-bullet{
+  opacity: 1;
+  background-color: var(--gray3);
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--clearpurple);
+}
+
+.work-wrap{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 50px;
+  gap: 60px;
+}
+
+.work-wrap div{
+  position: static;
+}
+
+.work-desc{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.work-desc h1{
+  font-family: var(--font-changwon);
+  font-size: 48px;
+  color: var(--yellow);
+}
+
+.work-desc h3{
+  font-size: 32px;
+}
+
+.work-tag{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 15px 0;
+  max-width: 450px;
+}
+
+.work-tag span{
+  font-size: 20px;
+  padding: 8px 25px;
+  border-radius: 30px;
+}
+
+.work-desc p{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.work-button{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.work-button button{
+  background-color: transparent;
+  border: 2px solid var(--yellow);
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+
+.work-button button a{
+  display: block;
+  font-size: 20px;
+  color: var(--black);
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+.work-button .go-to-mywork{
+  background-color: var(--yellow);
+}
+
+
+.work-button .go-to-github{
+  color: var(--gray4);
+  border: 2px solid var(--gray4);
+}
+
+.work-button .go-to-github a{
+  padding: 4px 10px;
+}
+
+.work-button .bi-github{
+  font-size: 30px;
+}
+
+.work-image{
+  flex: 1;
+}
+
+.work-image img{
+  position: static;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.section04-object .distance4 div:nth-child(1){
+  top: 45%;
+  right: 5%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section04-object .distance4 div:nth-child(2){
+  bottom: 37%;
+  left: 5%;
+  animation: move-10px 5s ease-in-out infinite;
+}
+
+.section04-object .distance5 div:nth-child(1){
+  top: 23%;
+  left: 11%;
+  animation: move-10px 4s ease-in-out infinite;
+}
+
+.section04-object .distance5 div:nth-child(2){
+  top: 5%;
+  right: 7%;
+  animation: move-10px 3s ease-in-out infinite;
+}
+
+/* ##################### section 05 ##################### */
+#section05{
+  display: none;
+  position: fixed;
+  z-index: 995;
+  transition: 0.8s ease;
+}
+
+#section05::before{
+  content: '';
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../images/background-universe.jpg) no-repeat center;
+  animation: opacity-zero-to-one 5s infinite;
+}
+
+.outro-wrap{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.outro-wrap h1{
+  font-size: 54px;
+  font-weight: 800;
+}
+
+.outro-wrap p{
+  line-height: 2em;
+  width: 1000px;
+  margin-bottom: 20px;
+}
+
+.contact-wrap{
+  display: flex;
+  width: 600px;
+}
+
+.contact-wrap .contact-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  flex: 1;
+}
+
+.contact-icon .bi{
+  font-size: 40px;
+  transition: 0.3s;
+}
+
+.contact-icon:hover > .bi{
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.contact-icon:hover > a{
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.contact-icon span{
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.contact-icon a{
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.copied-text{
+  position: absolute;
+  bottom: -80px;
+  padding: 15px 20px;
+  background-color: var(--gray2);
+  color: var(--black);
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+
+.copied-text::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 12px solid var(--gray2);
+}
+
+.return-button{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 12%;
+  right: 8%;
+  cursor: pointer;
+}
+
+.return-button button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 10px;
+}
+
+.return-button .bi{
+  display: block;
+  font-size: 40px;
+  color: var(--white);
+}
+
+.return-button:hover button{
+  transform-origin: 50% 52%;
+  transform: rotate(360deg);
+}
+
+.return-button span{
+  font-size: 14px;
+}
+
+/* animation */
+
+@keyframes logo-move {
+  0%{
+    transform: translate(-50%, -50%);
+  }
+  50%{
+    transform: translate(-50%, calc(-50% - 20px));
+  }
+  100%{
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes lets-scroll{
+  0%{
+    transform: translateX(-50%) rotate(3deg);
+  }
+  50%{
+    transform: translateX(-50%) rotate(0);
+  }
+  100%{
+    transform: translateX(-50%) translateY(3deg);
+  }
+}
+
+@keyframes move-10px{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-to-left{
+  0%{
+    transform: translate(0, 0);
+  }
+  50%{
+    transform: translate(-20px, 5px);
+  }
+  100%{
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes rotate-to-right{
+  0%{
+    transform: translateY(0) rotate(5deg);
+  }
+  50%{
+    transform: translateY(10px) rotate(-5deg);
+  }
+  100%{
+    transform: translateY(0) rotate(5deg);
+  }
+}
+
+@keyframes rotate-to-left{
+  0%{
+    transform: translateY(0) rotate(-20deg);
+  }
+  50%{
+    transform: translateY(10px) rotate(-10deg);
+  }
+  100%{
+    transform: translateY(0) rotate(-20deg);
+  }
+}
+
+@keyframes rotate-idcard{
+  0%{
+    transform: translateY(0) rotate(0deg);
+  }
+  50%{
+    transform: translateY(10px) rotate(3deg);
+  }
+  100%{
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes rotate-paper{
+  0%{
+    transform: translateY(0) rotate(5deg);
+  }
+  50%{
+    transform: translateY(10px) rotate(3deg);
+  }
+  100%{
+    transform: translateY(0) rotate(5deg);
+  }
+}
+
+@keyframes move-paper-active {
+  0%{
+    right: 20%;
+  }
+  50%{
+    right: 15%;
+  }
+  100%{
+    right: 20%;
+  }
+}
+
+@keyframes move-pad {
+  0%{
+    transform: translateY(-10px) rotate(-8deg);
+  }
+  50%{
+    transform: translateY(0) rotate(-8deg);
+  }
+  100%{
+    transform: translateY(-10px) rotate(-8deg);
+  }
+  
+}
+
+@keyframes move-pen {
+  0%{
+    transform: translateY(-5px) rotate(0deg);
+  }
+  50%{
+    transform: translateY(0) rotate(-3deg);
+  }
+  100%{
+    transform: translateY(-5px) rotate(0deg);
+  }
+}
+
+@keyframes move-teddy {
+  0%{
+    transform: translateY(0) rotate(20deg);
+  }
+  50%{
+    transform: translateY(30px) rotate(10deg);
+  }
+  100%{
+    transform: translateY(0) rotate(20deg);
+  }
+}
+
+@keyframes opacity-zero-to-one {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
