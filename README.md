@@ -2,7 +2,7 @@
   <h2 style="border-bottom: 1px solid #d8dee4;"> 🌌2025 PORTFOLIO🚀 </h2>
   <div align="center">
     <img width="70%" src="https://github.com/user-attachments/assets/32ec43e1-2b49-4eae-a71f-7f81471a89d3"/>
-    <p>⚡ <a href="https://curmemn.github.io/renewal-project-kbo/">포트폴리오 사이트 바로가기</a> ⚡</p>
+    <p>⚡ <a href="https://curmemn.github.io/portfolio-2025/">포트폴리오 사이트 바로가기</a> ⚡</p>
   </div>
   <div style="text-align: left;"> 
     <ul>
