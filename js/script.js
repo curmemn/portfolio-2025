@@ -6,23 +6,22 @@ const loadingImage = document.querySelector('.loading-image img');
 let isLoading = true;
 
 window.onload = () => {
-  loadingBar.style.width = '100%';
+  loadingBar.style.width = '100%'; //로딩 다 되면 제일 먼저 로딩바 100%로 채우기
   setTimeout(() => {
-    loadingImage.style.transform = 'scale(0.6) translate(-10%, 10%)';
+    loadingImage.style.transform = 'scale(0.6) translate(-10%, 10%)'; //우주선 아래로 당기기
     loadingText.innerHTML = `포트폴리오가 도착했습니다!
-    <i>본 사이트는 1920x1080 해상도에 최적화되어 있습니다.</i>`;
+    <i>본 사이트는 1920x1080 해상도에 최적화되어 있습니다.</i>`; //글자바꾸기
     setTimeout(() => {
-      loadingImage.style.transform = 'scale(0.6) translate(135%, -135%)';
+      loadingImage.style.transform = 'scale(0.6) translate(135%, -135%)'; //우주선 날아감
       setTimeout(() => {
-        loadingPage.style.opacity = 0;
+        loadingPage.style.opacity = 0; //로딩 페이지 투명화
         setTimeout(() => {
-          loadingPage.style.display = 'none';
-          isLoading = false;
+          loadingPage.style.display = 'none'; //투명화된 이후 none 처리
+          isLoading = false; // 로딩되는 동안 스크롤 막기
         }, 1200)
       }, 800)
     }, 900)
   }, 1000)
-
 }
 
 
