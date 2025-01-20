@@ -194,7 +194,7 @@ sectionDistances[3].d5.style.transform = 'scale(1)';
 section4.style.transform = 'scale(1)';
 section4.style.filter = 'unset';
 section5.style.opacity = 0;
-background.style.transform = 'scale(4)';
+background.style.transform = 'scale(5)';
 background.style.opacity = 1;
 if (timer) {
   clearTimeout(timer);
